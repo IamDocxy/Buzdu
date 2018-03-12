@@ -1,0 +1,3760 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10200.17.0328.0755                               -->
+<workbook source-build='10.2.1 (10200.17.0328.0755)' source-platform='win' version='10.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='OutPut_Cleaned' inline='true' name='federated.1ky7qtp1aj6tjc19fjip70cgv8yh' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='OutPut_Cleaned' name='textscan.13uccs70m6bsnk19fv84y1e6nckk'>
+            <connection class='textscan' directory='C:/Users/nayan/Downloads/Studies/python/gitPython/Buzdu' filename='OutPut_Cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.13uccs70m6bsnk19fv84y1e6nckk' name='OutPut_Cleaned.csv' table='[OutPut_Cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='real' name='Price' ordinal='3' />
+            <column datatype='real' name='Quality' ordinal='4' />
+            <column datatype='string' name='Size' ordinal='5' />
+            <column datatype='string' name='Strain' ordinal='6' />
+            <column datatype='real' name='Size in gm' ordinal='7' />
+            <column datatype='string' name='State' ordinal='8' />
+            <column datatype='real' name='Price per gm' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quality</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Quality]</local-name>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias>Quality</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Size]</local-name>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias>Size</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Strain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Strain]</local-name>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias>Strain</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Size in gm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Size in gm]</local-name>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias>Size in gm</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price per gm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price per gm]</local-name>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias>Price per gm</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[OutPut_Cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Legal_States_Status]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <calculation class='categorical-bin' column='[State]' new-bin='true'>
+          <bin default-name='false' value='&quot;Illegal_States&quot;'>
+            <value>&quot;AL&quot;</value>
+            <value>&quot;FL&quot;</value>
+            <value>&quot;GA&quot;</value>
+            <value>&quot;HI&quot;</value>
+            <value>&quot;IA&quot;</value>
+            <value>&quot;ID&quot;</value>
+            <value>&quot;IN&quot;</value>
+            <value>&quot;KS&quot;</value>
+            <value>&quot;KY&quot;</value>
+            <value>&quot;LA&quot;</value>
+            <value>&quot;MO&quot;</value>
+            <value>&quot;MS&quot;</value>
+            <value>&quot;NC&quot;</value>
+            <value>&quot;NE&quot;</value>
+            <value>&quot;OK&quot;</value>
+            <value>&quot;RI&quot;</value>
+            <value>&quot;SC&quot;</value>
+            <value>&quot;SD&quot;</value>
+            <value>&quot;TN&quot;</value>
+            <value>&quot;TX&quot;</value>
+            <value>&quot;UT&quot;</value>
+            <value>&quot;VA&quot;</value>
+            <value>&quot;WI&quot;</value>
+            <value>&quot;WY&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Legal_States&quot;'>
+            <value>&quot;AK&quot;</value>
+            <value>&quot;CA&quot;</value>
+            <value>&quot;CO&quot;</value>
+            <value>&quot;MA&quot;</value>
+            <value>&quot;ME&quot;</value>
+            <value>&quot;NV&quot;</value>
+            <value>&quot;OR&quot;</value>
+            <value>&quot;VT&quot;</value>
+            <value>&quot;WA&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Medicinal_States&quot;'>
+            <value>&quot;AR&quot;</value>
+            <value>&quot;AZ&quot;</value>
+            <value>&quot;CT&quot;</value>
+            <value>&quot;DE&quot;</value>
+            <value>&quot;IL&quot;</value>
+            <value>&quot;MD&quot;</value>
+            <value>&quot;MI&quot;</value>
+            <value>&quot;MN&quot;</value>
+            <value>&quot;MT&quot;</value>
+            <value>&quot;ND&quot;</value>
+            <value>&quot;NH&quot;</value>
+            <value>&quot;NJ&quot;</value>
+            <value>&quot;NM&quot;</value>
+            <value>&quot;NY&quot;</value>
+            <value>&quot;OH&quot;</value>
+            <value>&quot;PA&quot;</value>
+            <value>&quot;WV&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Strain]' role='dimension' type='nominal' />
+      <column-instance column='[Strain]' derivation='None' name='[none:Strain:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='State, City'>
+          <field>[State]</field>
+          <field>[City]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' dim-percentage='0.464865' measure-ordering='alphabetic' measure-percentage='0.535135' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Strain:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;707 Headband&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Afghan Kush&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Alien Kush&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Big blue&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Birthday Cake&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;bluedream&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;bubblegum&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Catpiss&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Chato og&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cherry Desil&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;cookies&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Dark knight&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Diesel&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Durbon Poison&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;goji og&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Grape ape&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Hindu Kush&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;hybrid&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lambs Breath&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lavender kush&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;loud&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Midnight&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mr. Nice&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;MTF&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;No idea&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Og sour chem&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;orange crush&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pineapple express&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pure Kush&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Purple Cookies&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Snoops Dream&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Snow Dog&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sour Apple&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Starwberry kush&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Starwberry Kush&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Strain&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Strawberry deisel&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;wedding cake&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;White widdo&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AAA&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;African&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Animal Cookies&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Arizona kush&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Black cherry&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Blue Diesel&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Blue Dream&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Blue sage&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Blueberry Lemon Haze&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bruce Banner&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bubba Kush&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Crushed Fruit&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dank&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dank Sinatra OG&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;flo&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fruity Tooty&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;gas&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gas&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gorilla Glue \#1&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Grandaddy Purple&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Grape stomper&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Green Crack&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Greencrack&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Haley&apos;s Comet&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jillybean&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Killa Kush&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kush Og&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;masta bubba&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;not sure&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Og Cookie&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;pineapple&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;powerplant&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Purple passion&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Purple trainwreck&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Romulan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Star Dawg&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Strawberry Cough&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Trump OG&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;White Widow&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Yagu&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Afghani&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Alice in Wonderland&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;always diffent strains&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Asian Fantasy&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Aurora Indica&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Banana&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Blackdaddy&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bubble Gum&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;C99 ( Cinderella 99 )&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cali kush&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Critical Kush&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Didn&apos;t tell me&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Fire Berry&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Glue&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;gorilla glue \#4&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gronilla glue&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Headband x NY Diesel&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Idk&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;j1&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;KK&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lemon haze&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Luke Skywalker&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mendocino Purp&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mid grade&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mk ultra&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Og holy grail&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Og kush&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Og purple kush&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Popcorn&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pretendo&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;purple diesel&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Purple Gas (Gas)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Redwood kush&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sherbert&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Shit&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sour Grape Kush&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sour OG&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;vanilla kush&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;White Rhino&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Afghan Big Bud&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ambrosia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Blackwater&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cat Piss&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Chocolate&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Chocolate hash berry&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Diablo&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Don?t know&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Don?t Know&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fancy Kush&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fruity pineapple&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Girl scout cookies&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Gorrilla glue&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Grand Daddy Kush&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Grape Ape&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;GSC&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Hybrid&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ice Queen&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kush&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;lemon g&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lemon Haze&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lemon og&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lemon walker&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;LSD&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mars o.g&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;moby dick&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Og cush&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Og Kush&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pez&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Purple Gorilla&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Purple nurple&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;reggie&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sour&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sour deisel&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sour purple&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sweet Dream&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sweet Tooth&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tangerine&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Varies&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Weeeeeeeeed!!!!!!!!!!!!!&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;8 Ball Kush&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Agent Orange&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Alien Kush SD&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Banana OG&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Birthday Cake Kush&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Blue cheese&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Budda kush&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Candyland and bubbakush&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;CBD MASS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Chem dog&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Chem Dog&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;East Coast Sour diesel&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Girl Scout Cookies&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Good&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Grape Ape Strain&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Has no name&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Home grown&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;I Don&apos;t Know&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;i dont know&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jesus OG&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Larry OG&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lemon&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;mids&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nope&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Northern Lights \#5&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Oregon Diesel&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Papa Blue Dream&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Purple grizzly&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Shake&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Something diesel&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;sour diesel&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Strawberry field&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sugar Chemo&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Super Glue&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Super Silver Haze&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tangerine Dream&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Viper&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;white berry&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;White elephant&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Wifi&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;3 Kings&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;303 Kush&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Alien Bubba&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Banana kush&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bay Dream&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Blackberry Cheesequake&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Blue City Diesel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Blue Frost&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Blue widow&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Blueberry kush&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cali&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;cheese&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cherry kush&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Double purple doja&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Fruity pebble og&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gas-Weed&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GDP&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;God Bud&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;gorilla glue&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gorrila glue&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GSC  and 9lb hammer&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Headband&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Headband X NY Diesel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jager&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kimbo Kush&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kong&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lemon Diesel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Meno breath&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mk Ultra&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Northern Lights&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;og kush maybe?&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Pressure&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Pure og.&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Purple Punch&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Recreational&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Regular&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Shwag&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sour patch kiss&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Waipi&apos;o Hoppa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;White Fire&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Afgoo&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ak 47&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Alien OG&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Apple&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Blue Haze&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cookies&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Corn&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Critical kush&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;dream queen&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;dro&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;frost&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;galato&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Girl Scoit Cookies&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Girl scout cookie&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Girl Scout cookie&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Gorilla Glue \#4&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Green monster&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jack Herer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kalifa kush&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Khalifa Kush&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kuh but we all know its not&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Madman OG&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mango kush&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Not sure&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;NYC Diesel&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;O G 18&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;O.&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Obama kush&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;OG Blueberry&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;pot&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;purple haze&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;purple kush&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;reggies&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sticky icky&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tahoe OG&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Vanilla Kush&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;White&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;X-Wing&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;-&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;--&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ace of Spades&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Afterlife OG&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ak 49&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Armageddon&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Blue Strawberry Kemcough&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bubba kush&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cat piss&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Crystal OG&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Death star&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Fire OG&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Fuck you that my name&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Gelato 33&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Gg4&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Gorrilla Glue&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hawaiian Fire&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;haze&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hell OG&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Kappa Kush&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Kerosene Kush&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;King Louis 13th OG&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;King Louis OG&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Kushberry&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Maui Waui&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Na&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;OG chem&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Og Draco&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;og Kush&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Pre98 Bubba&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;purple&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Red Headed Stranger&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Russian OG&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;some good shit&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Soul assassin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sour Diesel&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Space Queen&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Train wreck&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Uk&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Yellow Bone&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Afghani OG&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Apollo 11&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Black diamond&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Blue Dream Confidential&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Blue Dreams&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bubba gum&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cali buds&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;citrus kush&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Commercial&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;diablo og&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ethan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Forbidden Fruit&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;gelato&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Green crack&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;green Crack kush&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Indica&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jamaican Dream&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Just&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;lol hydro&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Loud Dream&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mr nice guy&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Nicole Day&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;No clue&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Og&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pineapple Og&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pink Kush&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Platinum&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Platinum Kush&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;purple urkle&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Rainbow&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Red Berry Hash&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sativa&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Skunk OG&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Skywalker&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Strawberry Kush&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;stress&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Super lemon haze&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Triple og&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tutankhamun&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Willie Nelsons red headed stranger&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;3x Crazy&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;9 Pound Hammer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Acapulco Gold&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Alien Dog&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Barry white&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Blackcherry kush&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Blueberry Dream&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Blueberry Pie&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Boys Scout Cookies&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;california rainbow weed&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;catpiss&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Chemdawg&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cookie&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dr who&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;God Father \#1&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Good Good Bruh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;green crack&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Guava&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Guerilla Glue \#4&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Highness&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Khalifia kush&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;King Kong&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kush berry&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;master og&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;mid&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mob boss&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Monkey nuts&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;n/a&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;og kush&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;OG Skunk&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Purp&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Purple platinum kush&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ringo&apos;s Gift&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Silver Haze&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;sky walker&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;sKY WALKER&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sour deasle&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sour Purple&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sugar Cookies&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;weed.&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Afghan Diesel&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ak47&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Amethyst&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Berry White&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Birthday cake&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Blackberry Kush&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;blue cheese&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cherry AK&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Chocolate haze&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Chocolate Haze&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cotton candy&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Don&apos;t Know&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Don&apos;t remember&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Firework&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;G6&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Gdp&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Girls scout cookies&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Grapefruit&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;IDK&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Idk?&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Incredible Bulk&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lemon G&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lemonhead&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Loud&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mid- grade&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mojave OG Kush&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Monkey Nuts&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Monster Cookies&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;N/a&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Of kush&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;OG haze&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Outdoor&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pine Og&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pineapple Express&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;purple og&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;sour diedel&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SSH ( Super Silver Haze ) Sativa&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Train Wreck&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UK Cheese&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;weed&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Afghan Poison&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Alaskan Ice&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Amnesia Haze&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Blue Devil&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Blueberry diesel&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cherry Pie Kush&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cinex&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Colorado Green&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;crip&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Don&apos;t know&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dont no&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Double dream&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Flame&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;gorilla glue \#1&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Grand daddy kush&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Great white&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ice kush&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;It was really good&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jack Flash&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jet fuel OG&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Limon haze&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Lodi dodi&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Monkey Nuts Og&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Moonlight Blu&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;og&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;OG Kush&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Orange cookies&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pineapple blue dream&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pineapple Express b grade&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Platinum cookies&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Platinum girl scout cookies&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Platinum kush&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pot&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Purple OG&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;strawberry cheesecake&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sunset sherbet&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tropical OG&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Venom OG&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Weed&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;white gold&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Afghan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Afghanica&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Apollo 13&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;blue dream&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Blue fire&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Candy Cane Kush&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cookie Killa&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;cotton candy&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Diesel kush&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Dissel&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;donotknow&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DosiDos&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Dro&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fire&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Frankenstein&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gelato cookie&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ghost Train Haze \# 1&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Green Hornet&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;indica&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jingle OG&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kryptanite&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;kush&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;low mid&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mexican&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;New york diesel&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Nobody here actually knows the strain even if they pretend to.&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;none&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;northern lights&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Pipe dream&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Platinum bubba kush no&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Purple Trainwrek&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Reg&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Skywalker og&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Skywalker Og&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Soar Diesel&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Super Lemon Haze&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tangie&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Thin Mint Cookies&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Watermelon&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ww2&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Afgooey&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Arabian Gold&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Blue Magoo&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Crib&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Critical Mass&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;daddy kush&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Death Star&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Durban Poison&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;fire af hlt&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Frosted Flakes&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gelato&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;girl scout cookies&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Good weed&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gorilla Glue \#4 From 7203985012&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gorlla glue \#4&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Green Monster&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Grilla glue&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;hindu kush&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hydro&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;idk&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kid n cookies&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kush madar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kush og&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;loud gas&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;marijuana&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;mendo breath&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;No Idea&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;OG&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Og 18&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Orange Kush&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Pot of Gold&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;purple  alien&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Purple kush&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rock Star&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;skywalker&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tru Og&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;White Widow X Skunk&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Wiz k&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;xxx og&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Abusive OG&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Alien Rock Candy&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Amnesia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Banana Kush&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Black widow&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Blueberry&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cali Buds&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;California Rainbow Weed&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cheese&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cherry bomb&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cherry diesel&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Critical Jack&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Devils lettace&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;diamond Og&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;East Coast Sour Diesel&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;G13&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gods Gift&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gorilla Glue&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;gorilla glue $4&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Have no idea&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;I dont know&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kalifa Kush&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;La Confidential&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lemon sour OG&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Loud Gas&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mids&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Not sure, it was fire tho.&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;O.G. Kush&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pearl Og&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pineapple haze&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Purple haze&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;soup&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sour kush&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sunshine daydream&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Super Skunk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Super Sour Diesel&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Superglue&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;White Elephant&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Xo&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yeti OG&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;5th element&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Alien Fire&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;All kinds&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Big bang&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Blue cookies&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Blurple&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;buba kush&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CBD Kush&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cherry Pie&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dont know&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;dunno&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;God&apos;s Vagina/ NA&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Golden goat&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Good shit&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Gorilla cush&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Grand Daddy Purp&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Green Apple&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Harijuana&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Hollands hope&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Juicy fruit&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Khalifia Kush&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kronic Or Cronic Idk&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;L.A blaze&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lemon Kush&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mango Kush&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mid&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Moonshine Haze&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;na&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Og skywalker&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;purple alskan thunder fuck&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ref&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Rhino&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SFV OG Kush&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sky walker&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sour Deisel&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sour diesel&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sour Kush&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Strawberry&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Trainwreck&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;White 99&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;.??&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;About 7 Different Strains Mixed Together&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Afwreck&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AK 47&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alien Dawg&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alpha OG&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;baby dro&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Banana sherbert&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Blue Cheese&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bubbble Gum&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Chronic&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cush&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;dodie&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;don&apos;t know&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Gasss&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Gelato og&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ghost Train Haze&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Haze&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Herojuana&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;hindu kush (outdoor)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;king og&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Leamon head&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;lemon haze&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mean green&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Og cherry&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Orange diesel&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Platinum Girl Scout Cookies&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Presidential OG&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Pure kush&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;purp&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Purple&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Purple Alien OG&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Rockstar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;San Fernando Valley OG&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sour Cheese&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tangerine Kush&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;trainwreck&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tuna Kush&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Uncle John Blueberry&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;White rhino&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Afghani Bullrider&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Alaskan Thunderfuck&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ancient OG&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Black Afghan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Blue Crack&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Blue dragon&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Chronic OG&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cinderella 99&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Columbian Gold&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;cookie og&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Early miss&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Eb Kush&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Flo&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Grandma&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Green&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jack Frost&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;jack ripper&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jaeger&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Load&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;loud?&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Moonrock&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Moonwalker OG&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Nebula&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;None&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;OG Bubba Kush&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Og cookie&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Pineapple&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Pineapple goo&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Pineapple skunk&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Purple Haze&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Purple Kush&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Purple princess&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Rachet&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sensi Star&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Skunk&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Street&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Super Sour Kush&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Tahoe Og&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;White widow&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Wifi OG&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;ACDC&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Aloha&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Blackberry kush&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;bubble gum kush&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Candyland&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Candylandh&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Chicago Blue&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Chino&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Chocolope&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Deisel&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;didnt tell me&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Do notknow&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Dont Know&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;eb kush&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Gorilla glue&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Gorilla Glue 4&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Grandaddy Purp&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hi&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;I don&apos;t know&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;I forgot&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Idk Nigga But It Got Me High&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kk&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lemon skunk&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lemon tree&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lucid Dream&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Milf overload&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Og cookies&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Paris OG&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;petter&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;platinum og&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Purple Hindu Kush&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sour Nightmare Kush&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Strain unknown&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Strawberry cookie&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Swag&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sweet tooth&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;tanderine haze&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Thunder fuck&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Zombie kush&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;..&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AK 48&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AK-49&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Allen Wrench&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BabyCoconut&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Big Bud&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Black Jack&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Blackberry&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Blue dream&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Blue night&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Buddha&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;dank&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Deadhead OG&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Donotknow&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;dont know&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Forbidden fruit&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Gangbang&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ghost OG&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Girl Scout Cookie&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Girl ScoutCookies&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Head Band&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Holy grail&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Idk But I Got It From A Dealer In R1&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;idk but it got me high asf&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;King&apos;s Kush&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lemon OG&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Master Kush&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;medical&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;OG Chronic&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pineapple SourDiesel&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Platinum OG&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Presidential Strawberry&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Purple Elephant&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Purple power&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Reggie&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;sativa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sour Diesel and Trainwreck&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;unsure&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;White OG&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;yoda&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>State-wies Quality</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OutPut_Cleaned' name='federated.1ky7qtp1aj6tjc19fjip70cgv8yh' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ky7qtp1aj6tjc19fjip70cgv8yh'>
+            <column datatype='real' name='[Quality]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Quality]' derivation='Avg' name='[avg:Quality:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Quality:qk]' palette='red_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Quality:qk]' />
+              <text column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[none:State:nk]' />
+              <lod column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[none:State:nk]' />
+              <geometry column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[Latitude (generated)]</rows>
+        <cols>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>State-wise Price&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OutPut_Cleaned' name='federated.1ky7qtp1aj6tjc19fjip70cgv8yh' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ky7qtp1aj6tjc19fjip70cgv8yh'>
+            <column datatype='real' name='[Price per gm]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Price per gm]' derivation='Avg' name='[avg:Price per gm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]' palette='red_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <size column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]' />
+              <color column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]' />
+              <text column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[none:State:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Price Comparison across states where marijuana is allowed for Recreational purpose, Medical purpose and where it is illegal</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OutPut_Cleaned' name='federated.1ky7qtp1aj6tjc19fjip70cgv8yh' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ky7qtp1aj6tjc19fjip70cgv8yh'>
+            <column datatype='string' name='[Legal_States_Status]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <calculation class='categorical-bin' column='[State]' new-bin='true'>
+                <bin default-name='false' value='&quot;Illegal_States&quot;'>
+                  <value>&quot;AL&quot;</value>
+                  <value>&quot;FL&quot;</value>
+                  <value>&quot;GA&quot;</value>
+                  <value>&quot;HI&quot;</value>
+                  <value>&quot;IA&quot;</value>
+                  <value>&quot;ID&quot;</value>
+                  <value>&quot;IN&quot;</value>
+                  <value>&quot;KS&quot;</value>
+                  <value>&quot;KY&quot;</value>
+                  <value>&quot;LA&quot;</value>
+                  <value>&quot;MO&quot;</value>
+                  <value>&quot;MS&quot;</value>
+                  <value>&quot;NC&quot;</value>
+                  <value>&quot;NE&quot;</value>
+                  <value>&quot;OK&quot;</value>
+                  <value>&quot;RI&quot;</value>
+                  <value>&quot;SC&quot;</value>
+                  <value>&quot;SD&quot;</value>
+                  <value>&quot;TN&quot;</value>
+                  <value>&quot;TX&quot;</value>
+                  <value>&quot;UT&quot;</value>
+                  <value>&quot;VA&quot;</value>
+                  <value>&quot;WI&quot;</value>
+                  <value>&quot;WY&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Legal_States&quot;'>
+                  <value>&quot;AK&quot;</value>
+                  <value>&quot;CA&quot;</value>
+                  <value>&quot;CO&quot;</value>
+                  <value>&quot;MA&quot;</value>
+                  <value>&quot;ME&quot;</value>
+                  <value>&quot;NV&quot;</value>
+                  <value>&quot;OR&quot;</value>
+                  <value>&quot;VT&quot;</value>
+                  <value>&quot;WA&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Medicinal_States&quot;'>
+                  <value>&quot;AR&quot;</value>
+                  <value>&quot;AZ&quot;</value>
+                  <value>&quot;CT&quot;</value>
+                  <value>&quot;DE&quot;</value>
+                  <value>&quot;IL&quot;</value>
+                  <value>&quot;MD&quot;</value>
+                  <value>&quot;MI&quot;</value>
+                  <value>&quot;MN&quot;</value>
+                  <value>&quot;MT&quot;</value>
+                  <value>&quot;ND&quot;</value>
+                  <value>&quot;NH&quot;</value>
+                  <value>&quot;NJ&quot;</value>
+                  <value>&quot;NM&quot;</value>
+                  <value>&quot;NY&quot;</value>
+                  <value>&quot;OH&quot;</value>
+                  <value>&quot;PA&quot;</value>
+                  <value>&quot;WV&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='real' name='[Price per gm]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Price per gm]' derivation='Avg' name='[avg:Price per gm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Price per gm]' derivation='Sum' name='[sum:Price per gm:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[Legal_States_Status]' direction='ASC' using='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[sum:Price per gm:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[Legal_States_Status]' value='187' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f1ce63' />
+                <format attr='size' value='0.55972373485565186' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]</rows>
+        <cols>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[Legal_States_Status]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>State-wise Price&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OutPut_Cleaned' name='federated.1ky7qtp1aj6tjc19fjip70cgv8yh' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ky7qtp1aj6tjc19fjip70cgv8yh'>
+            <column datatype='real' name='[Price per gm]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Price per gm]' derivation='Avg' name='[avg:Price per gm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[none:State:nk]' direction='DESC' using='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]' palette='red_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='3' />
+            <format attr='stroke-color' id='refline0' value='#ff0000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b4b4b4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]</rows>
+        <cols>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[none:State:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Quality:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Price per gm:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[avg:Quality:qk]</field>
+            <field>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[none:State:nk]</field>
+            <field>[federated.1ky7qtp1aj6tjc19fjip70cgv8yh].[none:Strain:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      gGEB+ZNbTf8fYVNCZOESMlMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      IdrJ/wMByJp7bZ/QkgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
